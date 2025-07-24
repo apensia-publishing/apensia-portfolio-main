@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import App from "../App";
+import MainPage from "../pages/MainPage";
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<App />} />
+        <Route path="/" element={<MainPage />} />
       </Routes>
     </BrowserRouter>
   );

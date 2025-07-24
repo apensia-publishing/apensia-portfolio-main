@@ -1,1 +1,18 @@
+@layer theme,base;
 @import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
+
+@theme {
+  /* Font size */
+  --text-heading1: 45px;
+  --text-caption: 30px;
+  --text-heading2: 26px;
+  --text-heading3: 22px;
+  --text-paragraph: 15px;
+  --text-label: 13px;
+  --text-display: 10px;
+}
+
+button {
+  cursor: pointer;
+}
