@@ -8,8 +8,7 @@ import {
 export default function Navigation() {
   const navMenus = [
     { id: "about_me", text: "About Me" },
-    { id: "tech", text: "Tech Stacks" },
-    { id: "portfolio", text: "Portfolios" },
+    { id: "works", text: "Works" },
     { id: "others", text: "Others" },
   ];
 
@@ -20,7 +19,7 @@ export default function Navigation() {
 
   return (
     <header className="fixed left-0 top-0 h-15 w-full md:h-30 xl:w-[250px] xl:h-svh bg-white">
-      <nav className="w-full h-full flex flex-col justify-center xl:justify-start gap-5 relative px-[20px] md:px-[32px] xl:border-r-[0.1px] xl:border-r-gray-300">
+      <nav className="w-full h-full flex flex-col justify-center xl:justify-start gap-5 relative py-5 px-[20px] md:px-[32px] xl:border-r-[0.1px] xl:border-r-gray-300">
         <div className="flex justify-between items-center xl:hidden">
           <a href="#hero" className="text-xl font-semibold">
             Apensia Studio
@@ -37,7 +36,7 @@ export default function Navigation() {
         <AnimatePresence>
           {menuOpen && (
             <motion.ul
-              className="bg-white text-paragraph absolute top-18 left-0 flex flex-col gap-5 w-full origin-top justify-between px-[20px] md:hidden"
+              className="bg-white text-paragraph absolute top-14 left-0 flex flex-col gap-5 w-full origin-top justify-between py-5 px-[20px] md:hidden"
               variants={hamburgerMenuVariants}
               initial="initial"
               animate="animate"
