@@ -14,11 +14,6 @@ export const specializationData = [
     title: "Product Management",
     p: "Business strategy planning product management",
   },
-  {
-    id: "visual",
-    title: "Video & Animation",
-    p: "Animation making and video editing for multi-purpose videos",
-  },
 ];
 
 export const projectPreviewCardData = [
@@ -48,6 +43,16 @@ export const projectPreviewCardData = [
     projectTitle: "GoodMyTalk",
     bgColor: "bg-orange-400",
     src: "/thumbnail/goodmytalk_logo.svg",
+    to: "/",
+  },
+];
+
+export const webServicePreviewCardData = [
+  {
+    id: "goldentrip",
+    projectTitle: "Goldentrip",
+    bgColor: "bg-yellow-50",
+    src: "/thumbnail/goldentrip_logo.svg",
     to: "/",
   },
 ];

@@ -22,7 +22,7 @@ export default function ProjectPreviewCard({
           `w-full aspect-video flex justify-center items-center` + ` ${bgColor}`
         }
       >
-        <img src={src} alt="Project logo" />
+        <img src={src} alt="Project logo" className="w-[300px]" />
       </Link>
     </div>
   );

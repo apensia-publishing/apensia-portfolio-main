@@ -20,6 +20,7 @@ import {
   specializationData,
   projectPreviewCardData,
   linkData,
+  webServicePreviewCardData,
 } from "../utils/data/heroData";
 import ProjectPreviewCard from "../components/ProjectPreviewCard";
 
@@ -138,7 +139,7 @@ export default function MainPage() {
         <section
           aria-labelledby="experience"
           id="experience"
-          className="pt-10 md:pt-20 xl:pt-5 px-[20px] md:px-[32px] flex flex-col gap-20 border-t-[0.05px] border-t-gray-300"
+          className="py-10 md:py-20 xl:pt-5 px-[20px] md:px-[32px] flex flex-col gap-20 border-t-[0.05px] border-t-gray-300"
         >
           <div className="flex flex-col md:flex-row justify-between">
             <h1 className="text-heading2 md:text-heading1">
@@ -186,28 +187,41 @@ export default function MainPage() {
           </div>
           <div
             aria-labelledby="web_services"
-            className="flex gap-10 justify-between flex-col md:flex-row md:max-w-3/4 xl:max-w-3/5"
+            className="flex gap-10 justify-between flex-col w-full"
           >
             <h2 className="text-heading3">
               <span className="mr-3 font-semibold text-gray-400">2b</span>
               Web Services
             </h2>
-            <div></div>
-          </div>
-
-          {/* Visual contents */}
-          <div
-            aria-labelledby="visual_contents"
-            className="flex gap-10 justify-between flex-col md:flex-row md:max-w-3/4 xl:max-w-3/5"
-          >
-            <h2 className="text-heading3">
-              <span className="mr-3 font-semibold text-gray-400">2c</span>
-              Visual Contents
-            </h2>
-            <div></div>
+            {webServicePreviewCardData.map((i) => (
+              <ProjectPreviewCard
+                key={i.id}
+                to={i.to}
+                projectTitle={i.projectTitle}
+                bgColor={i.bgColor}
+                src={i.src}
+              />
+            ))}
           </div>
         </section>
-        <section></section>
+
+        {/* Contact section */}
+        <section
+          aria-labelledby="experience"
+          id="experience"
+          className="py-10 md:py-20 xl:pt-5 px-[20px] md:px-[32px] flex flex-col gap-20 border-t-[0.05px] border-t-gray-300"
+        >
+          <div className="flex flex-col justify-between">
+            <h1 className="text-heading2 md:text-heading1">
+              <span className="text-green-600 mr-5 font-semibold">03</span>
+              Contact
+            </h1>
+            <div className="flex flex-col gap-5 mt-3 text-gray-400 md:max-w-[400px] xl:max-w-[600px]">
+              <p>For any inquiries, please send request through below email</p>
+              <span className="text-3xl text-black">apensia914@gmail.com</span>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
