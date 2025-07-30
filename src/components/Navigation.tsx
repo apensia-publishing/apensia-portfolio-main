@@ -70,7 +70,7 @@ export default function Navigation() {
         <ul className="hidden md:flex md:justify-between xl:flex-col xl:gap-5 xl:mt-10">
           {navMenus.map((i, index) => (
             <li key={i.id}>
-              <a href="">{i.text}</a>
+              <a href={`/#${i.id}`}>{i.text}</a>
               <sup className="text-gray-400">0{index + 1}</sup>
             </li>
           ))}

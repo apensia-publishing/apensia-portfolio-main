@@ -138,7 +138,7 @@ export default function MainPage() {
         {/* Experience section */}
         <section
           aria-labelledby="experience"
-          id="experience"
+          id="works"
           className="py-10 md:py-20 xl:pt-5 px-[20px] md:px-[32px] flex flex-col gap-20 border-t-[0.05px] border-t-gray-300"
         >
           <div className="flex flex-col md:flex-row justify-between">
@@ -208,7 +208,7 @@ export default function MainPage() {
         {/* Contact section */}
         <section
           aria-labelledby="experience"
-          id="experience"
+          id="contact"
           className="py-10 md:py-20 xl:pt-5 px-[20px] md:px-[32px] flex flex-col gap-20 border-t-[0.05px] border-t-gray-300"
         >
           <div className="flex flex-col justify-between">

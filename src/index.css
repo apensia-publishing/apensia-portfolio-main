@@ -13,6 +13,10 @@
   --text-display: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
 }
