@@ -9,7 +9,7 @@ export default function Navigation() {
   const navMenus = [
     { id: "about_me", text: "About Me" },
     { id: "works", text: "Works" },
-    { id: "others", text: "Others" },
+    { id: "contact", text: "Contact" },
   ];
 
   // Hamburger menu edge function

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Navigation from "../components/Navigation";
 import { IconContext } from "react-icons/lib";
 import { FaSass, FaReact, FaSlack } from "react-icons/fa";
@@ -18,6 +19,7 @@ import { BiLogoPostgresql, BiLogoFigma } from "react-icons/bi";
 import {
   specializationData,
   projectPreviewCardData,
+  linkData,
 } from "../utils/data/heroData";
 import ProjectPreviewCard from "../components/ProjectPreviewCard";
 
@@ -110,6 +112,26 @@ export default function MainPage() {
               ))}
             </ul>
           </div>
+
+          {/* Info sections */}
+          <div
+            aria-labelledby="information"
+            className="flex gap-10 justify-betweenf flex-col w-full"
+          >
+            <h2 className="text-heading3">
+              <span className="mr-3 font-semibold text-gray-400">1c</span>
+              Links
+            </h2>
+            <ul className="flex gap-10">
+              {linkData.map((i) => (
+                <li key={i.id}>
+                  <Link to={i.to} className="underline" target="_blank">
+                    {i.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
 
         {/* Experience section */}
@@ -130,12 +152,9 @@ export default function MainPage() {
                 future.
               </p>
               <p>
-                Web service includes, but not limited to, SaaS platform,
-                E-commerce website or other web services upon your request. Not
-                only API backend server development, Apensia studio also takes
-                care of creating web service from frontend and product
-                management service as well for those who do not have solid
-                business plan.
+                Apensia studio deals with not only creating interactive and
+                creative landing pages, but also other full-stack web services
+                such as SaaS platform, E-commerce and so on.
               </p>
               <p>
                 In order for delivering genuine company image and product detail
@@ -170,7 +189,7 @@ export default function MainPage() {
             className="flex gap-10 justify-between flex-col md:flex-row md:max-w-3/4 xl:max-w-3/5"
           >
             <h2 className="text-heading3">
-              <span className="mr-3 font-semibold text-gray-400">1b</span>
+              <span className="mr-3 font-semibold text-gray-400">2b</span>
               Web Services
             </h2>
             <div></div>
@@ -182,7 +201,7 @@ export default function MainPage() {
             className="flex gap-10 justify-between flex-col md:flex-row md:max-w-3/4 xl:max-w-3/5"
           >
             <h2 className="text-heading3">
-              <span className="mr-3 font-semibold text-gray-400">1c</span>
+              <span className="mr-3 font-semibold text-gray-400">2c</span>
               Visual Contents
             </h2>
             <div></div>

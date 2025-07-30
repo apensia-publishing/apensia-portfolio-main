@@ -51,3 +51,21 @@ export const projectPreviewCardData = [
     to: "/",
   },
 ];
+
+export const linkData = [
+  {
+    id: "blog",
+    to: "https://apensiablog.dev",
+    title: "Apensia Blog",
+  },
+  {
+    id: "linkedin",
+    to: "https://www.linkedin.com/in/donghoon-han-7a258151/",
+    title: "LinkedIn Profile",
+  },
+  {
+    id: "youtube",
+    to: "https://www.youtube.com/@apensia914",
+    title: "Youtube Channel",
+  },
+];
