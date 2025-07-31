@@ -21,29 +21,21 @@ export const projectPreviewCardData = [
     id: "knower",
     projectTitle: "Knower (About Page)",
     bgColor: "bg-gray-200",
-    src: "/thumbnail/knower_logo.svg",
-    to: "/",
   },
   {
     id: "fleam",
     projectTitle: "Fleam",
     bgColor: "bg-blue-400",
-    src: "/thumbnail/fleam_logo.svg",
-    to: "/",
   },
   {
     id: "yurekan",
     projectTitle: "Yurekan",
     bgColor: "bg-sky-50",
-    src: "/thumbnail/yurekan_logo.svg",
-    to: "/",
   },
   {
     id: "goodmytalk",
     projectTitle: "GoodMyTalk",
     bgColor: "bg-orange-400",
-    src: "/thumbnail/goodmytalk_logo.svg",
-    to: "/",
   },
 ];
 
@@ -52,8 +44,6 @@ export const webServicePreviewCardData = [
     id: "goldentrip",
     projectTitle: "Goldentrip",
     bgColor: "bg-yellow-50",
-    src: "/thumbnail/goldentrip_logo.svg",
-    to: "/",
   },
 ];
 

@@ -21,11 +21,8 @@ export default function Navigation() {
     <header className="fixed left-0 top-0 h-15 w-full md:h-30 xl:w-[250px] xl:h-svh bg-white">
       <nav className="w-full h-full flex flex-col justify-center xl:justify-start gap-5 relative py-5 px-[20px] md:px-[32px] xl:border-r-[0.1px] xl:border-r-gray-300">
         <div className="flex justify-between items-center xl:hidden">
-          <a href="#hero" className="text-xl font-semibold">
+          <a href="/" className="text-xl font-semibold">
             Apensia Studio
-          </a>
-          <a href="" className="hidden text-gray-400 text-paragraph md:block">
-            Contact Me
           </a>
           <button onClick={handleMenuOpen} className="text-sm md:hidden">
             {menuOpen ? "Close" : "Menu"}
@@ -54,15 +51,6 @@ export default function Navigation() {
                 className="border-[0.25px] border-gray-200"
                 variants={hamburgerMenuItemVariants}
               />
-              <motion.li variants={hamburgerMenuItemVariants}>
-                <a
-                  href=""
-                  className="text-gray-400 md:hidden"
-                  onClick={onClickMenuClose}
-                >
-                  Contact Me
-                </a>
-              </motion.li>
             </motion.ul>
           )}
         </AnimatePresence>

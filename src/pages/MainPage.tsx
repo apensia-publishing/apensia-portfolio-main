@@ -61,7 +61,7 @@ export default function MainPage() {
         </section>
         <section
           id="hero"
-          className="pt-30 pb-50 md:pt-40 xl:pt-5 px-[20px] md:px-[32px] flex flex-col gap-20"
+          className="py-20 px-[20px] md:px-[32px] flex flex-col gap-20"
         >
           {/* Summary part */}
           <div className="flex flex-col gap-5">
@@ -178,10 +178,10 @@ export default function MainPage() {
             {projectPreviewCardData.map((i) => (
               <ProjectPreviewCard
                 key={i.id}
-                to={i.to}
+                to={`/${i.id}`}
                 projectTitle={i.projectTitle}
                 bgColor={i.bgColor}
-                src={i.src}
+                src={`/thumbnail/${i.id}_logo.svg`}
               />
             ))}
           </div>
@@ -196,10 +196,10 @@ export default function MainPage() {
             {webServicePreviewCardData.map((i) => (
               <ProjectPreviewCard
                 key={i.id}
-                to={i.to}
+                to={`/${i.id}`}
                 projectTitle={i.projectTitle}
                 bgColor={i.bgColor}
-                src={i.src}
+                src={`/thumbnail/${i.id}_logo.svg`}
               />
             ))}
           </div>
