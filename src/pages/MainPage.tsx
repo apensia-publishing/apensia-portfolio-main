@@ -177,6 +177,7 @@ export default function MainPage() {
             </h2>
             {projectPreviewCardData.map((i) => (
               <ProjectPreviewCard
+                to={i.to}
                 key={i.id}
                 projectTitle={i.projectTitle}
                 bgColor={i.bgColor}
@@ -195,6 +196,7 @@ export default function MainPage() {
             </h2>
             {webServicePreviewCardData.map((i) => (
               <ProjectPreviewCard
+                to={i.to}
                 key={i.id}
                 projectTitle={i.projectTitle}
                 bgColor={i.bgColor}

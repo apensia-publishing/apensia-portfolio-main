@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { useState, useRef, useEffect } from "react";
 
 type ProjectPreivewCardProps = {
@@ -5,12 +6,14 @@ type ProjectPreivewCardProps = {
   bgColor: string;
   src: string;
   hoverBackground: string;
+  to: string;
 };
 
 export default function ProjectPreviewCard({
   projectTitle,
   bgColor,
   src,
+  to,
   hoverBackground,
 }: ProjectPreivewCardProps) {
   const [isHovered, setIsHovered] = useState(false);
@@ -32,7 +35,8 @@ export default function ProjectPreviewCard({
   return (
     <div>
       <h3 className="mb-5 text-xl font-semibold">{projectTitle}</h3>
-      <button
+      <Link
+        to={to}
         className="w-full aspect-video flex justify-center items-center relative overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -67,7 +71,7 @@ export default function ProjectPreviewCard({
             <source src={hoverBackground} type="video/webm" />
           </video>
         </div>
-      </button>
+      </Link>
     </div>
   );
 }

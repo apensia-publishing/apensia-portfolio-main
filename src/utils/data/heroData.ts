@@ -22,33 +22,38 @@ export const projectPreviewCardData = [
     projectTitle: "Knower (About Page)",
     bgColor: "bg-gray-200",
     hoverBackground: "/projects/Knower/knower_preview.webm",
+    to: "/knower",
   },
   {
     id: "fleam",
     projectTitle: "Fleam",
     bgColor: "bg-blue-400",
     hoverBackground: "/projects/Fleam/fleam_preview.webm",
+    to: "/fleam",
   },
   {
     id: "yurekan",
     projectTitle: "Yurekan",
     bgColor: "bg-sky-50",
     hoverBackground: "/projects/Yurekan/yurekan_preview.webm",
+    to: "/yurekan",
   },
   {
     id: "goodmytalk",
     projectTitle: "GoodMyTalk",
     bgColor: "bg-orange-400",
     hoverBackground: "/projects/GoodMyTalk/goodmytalk_preview.webm",
+    to: "/goodmytalk",
   },
 ];
 
 export const webServicePreviewCardData = [
   {
     id: "goldentrip",
-    projectTitle: "Goldentrip",
+    projectTitle: "Goldentrip (WIP)",
     bgColor: "bg-yellow-50",
     hoverBackground: "/projects/Goldentrip/goldentrip_preview.webm",
+    to: "/goldentrip",
   },
 ];
 
