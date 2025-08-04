@@ -178,10 +178,10 @@ export default function MainPage() {
             {projectPreviewCardData.map((i) => (
               <ProjectPreviewCard
                 key={i.id}
-                to={`/${i.id}`}
                 projectTitle={i.projectTitle}
                 bgColor={i.bgColor}
                 src={`/thumbnail/${i.id}_logo.svg`}
+                hoverBackground={i.hoverBackground}
               />
             ))}
           </div>
@@ -196,10 +196,10 @@ export default function MainPage() {
             {webServicePreviewCardData.map((i) => (
               <ProjectPreviewCard
                 key={i.id}
-                to={`/${i.id}`}
                 projectTitle={i.projectTitle}
                 bgColor={i.bgColor}
                 src={`/thumbnail/${i.id}_logo.svg`}
+                hoverBackground={i.hoverBackground}
               />
             ))}
           </div>

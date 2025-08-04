@@ -4,7 +4,7 @@ import ProjectDetailLayout from "../components/ProjectDetailLayout";
 import KnowerProjectPage from "../pages/projects/Knower";
 import FleamProjectPage from "../pages/projects/Fleam";
 import YurekanProjectPage from "../pages/projects/Yurekan";
-import GoodMyTalkProjectPage from "../pages/projects/Goodmytalk";
+import GoodMyTalkProjectPage from "../pages/projects/GoodMyTalk";
 import GoldenTripProjectPage from "../pages/projects/Goldentrip";
 
 export default function Router() {
